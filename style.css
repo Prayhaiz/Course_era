@@ -1,0 +1,58 @@
+* , *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+body {
+  background: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  padding: 2em;
+  display: flex;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 10px;
+  margin-inline: auto;
+}
+
+section {
+  padding:  2em 0;
+  border: 3px solid #000;
+  width: 100%;
+}
+
+section + section {
+  margin: 1em auto;
+}
+
+
+.header {
+  border: 2px solid #000;
+  border-top: none;
+  width: 150px;
+  max-width: 11.5rem;
+  float: right;
+  margin-top: -2rem;;
+}
+
+.header > .tittle {
+  text-transform: lowercase;
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+
+.wrapper {
+  margin-inline: auto;
+  padding: 1.5em .5em;
+  background: papayawhip;
+  text-wrap: wrap;
+}
+
+.wrapper > .text {
+  text-align: justify;
+}
